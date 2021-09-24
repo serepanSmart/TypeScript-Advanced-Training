@@ -11,9 +11,9 @@ export default class Encyclopedia extends ReferenceItem {
     return this._copies;
   }
 
-  // set copies(): number {
-  //   this._copies;
-  // }
+  set copies(value: number) {
+    this._copies = value;
+  }
 
   constructor(id: number, title: string, year: number, public edition: number) {
     super(id, title, year);
@@ -25,6 +25,6 @@ export default class Encyclopedia extends ReferenceItem {
   }
 
   printCitation() {
-    console.log(`ABSTRACT ${this.title} -${this.year}`);
+    console.log(`ABSTRACT ${this.title} - ${this.year}`);
   };
 };

@@ -14,8 +14,7 @@ function showHello(divName: string, name: string) {
   elt.innerText = `Hello from ${name}`;
 }
 
-// ============================ //
-// BASICS
+// ================== BASICS ===================== //
 
 // logFirstAvailable();
 // logBookTitles(getBookTitlesByCategory());
@@ -26,7 +25,6 @@ function showHello(divName: string, name: string) {
 
 // Task 03.01
 
-
 // const myId: string = createCustomerID('Ann', 30);
 // console.log(myId);
 // let idGenerator: (name: string, id: number) => string;
@@ -36,8 +34,6 @@ function showHello(divName: string, name: string) {
 // let idGenerator2: typeof createCustomerID;
 
 // Task 03.02. Optional, Default and Rest Parameters
-
-
 
 // createCustomer('Ann'); // with one param or nmultiple
 // console.log(getBookTitlesByCategory());
@@ -59,7 +55,7 @@ function showHello(divName: string, name: string) {
 // console.log(bookTitleTransform(1213));
 
 
-// =========================== 04 INTERFACES ====================== //
+// =========================== 04. INTERFACES ====================== //
 
 // Task 04.01. Defining an Interface
 
@@ -84,8 +80,6 @@ function showHello(divName: string, name: string) {
 // logDamage('LOGDAMAGE FAILED');
 
 // Task 04.03. Extending Interface
-
-
 
 // const favouriteAuthor: Author = {
 //   name: 'Ann',
@@ -119,7 +113,7 @@ function showHello(divName: string, name: string) {
 // Task 04.05. Keyof Operator
 // console.log(getProperty(myBook, 'title'));
 
-// =========================== 05 CLASSES ====================== //
+// =========================== 05. CLASSES ====================== //
 // Task 05.01. Creating and Using Classes
 
 // const ref = new ReferenceItem(1, 'Learn TS', 2021);
@@ -182,6 +176,8 @@ function showHello(divName: string, name: string) {
 // };
 // console.log(library);
 
+// ========================= 07. Generic ==================== //
+
 // Task 07.01. Generic Functions
 // const inventory: Book[] =
 //   [
@@ -237,7 +233,8 @@ function showHello(divName: string, name: string) {
 // const params2: Parameters<typeof createCustomer> = ['Anna', 40];
 // createCustomer(...params);
 
-// 08. Decorators
+// ========================= 08. Decorators ==================== //
+
 // Task 08.01. 08.02 Class Decorators (sealed, logger)
 
 // const favoriteLibrarian: Librarian = new UL.UniversityLibrarian();
@@ -266,11 +263,14 @@ function showHello(divName: string, name: string) {
 // console.log(favoriteLibrarian.name);
 
 // Task 08.07. Accessor Decorator
-// const refBook = new RefBook(1, 'Learn TS', 2021, 2);
-// refBook.copies = 5;
+const refBook = new RefBook(1, 'Learn TS', 2021, 2);
+console.log(refBook);
+refBook.copies = 5;
+console.log(refBook);
 
 
-// 09. Asynchronous Patterns
+// ========================= 08. Asynchronous Patterns ==================== //
+
 // Task 09.01. Callback Functions
 
 // console.log('BEGIN');
