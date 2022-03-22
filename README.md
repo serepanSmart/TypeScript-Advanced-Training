@@ -1,2 +1,2 @@
 # ts-learn
-TypeScript Training, including advanced topics
+TRAINING, LEARNING: TypeScript, including advanced topics
